@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px; 
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Config. da Home */
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.886);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1,8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    color: #EBE7D9;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: #EBE7D9;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: #F4EBDD;
+    transition: all 1.5s ease;
+}
+
+.menu-content.list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Conteúdo Principal */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    background: linear-gradient(#8abcc2da, #526f72db);
+    background-attachment: fixed;
+}
+
+main {
+    max-width: 800px;
+    min-width: 320;
+
+    padding: 50px;
+    margin: auto;
+    
+}
+
+.main-content {
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px 10px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.415);
+    background-color: #001928c9;
+}
+
+h1, h2, h3 {
+    font-family: 'Krona One', sans-serif;
+    color: #F4EBDD;
+    margin: 5px;
+    padding: 5px;
+}
+
+h4 {
+    font-family: 'Krona One', sans-serif;
+    color: #001928;
+    margin: 5px;
+    padding: 5px;
+}
+
+img {
+    cursor: pointer;
+}
+
+p {
+    color: white;
+    text-align: justify center;
+    margin: 10px;
+    padding: 10px;
+}
+
+q {
+    font-style: italic;
+    font-weight: bold;
+    color: #F4EBDD;
+}
+
+.obs {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: oblique;
+    color: #F4EBDD;
+}
+
